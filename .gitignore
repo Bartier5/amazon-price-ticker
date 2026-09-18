@@ -1,0 +1,17 @@
+# Login session — never commit this
+session/
+amazon_session.json
+
+# Secrets
+.env
+
+# Python noise
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# venv — in case it ever ends up here
+venv/
+env/
+.venv/
