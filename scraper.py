@@ -2,9 +2,10 @@
 import asyncio
 from playwright.async_api import async_playwright
 from auth import load_session_into_context
+import os
 
 # ── Constants ────────────────────────────────────────────────────────────────
-SESSION_PATH = "session/amazon_session.json"
+SESSION_PATH = os.path.join(os.path.dirname(__file__), "session", "amazon_session.json")
 
 # ── Core scraping function ───────────────────────────────────────────────────
 

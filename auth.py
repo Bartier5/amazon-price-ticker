@@ -5,7 +5,7 @@ import json
 import os
 
 # Path where the session will be saved
-SESSION_PATH = "session/amazon_session.json"
+SESSION_PATH = os.path.join(os.path.dirname(__file__), "session", "amazon_session.json")
 
 async def save_session():
     async with async_playwright() as p:
